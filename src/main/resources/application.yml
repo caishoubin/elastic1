@@ -1,0 +1,19 @@
+################### 项目配置  ###################
+elastic:
+  swagger-open: true #是否开启swagger (true/false)
+server:
+  servlet:
+    context-path: /elastic
+  port: 8080
+spring:  
+  datasource:  #数据库配置
+    url : jdbc:postgresql://198.216.15.201:5432/asset4
+    username : postgres  
+    password : postgres  
+    driverClassName : org.postgresql.Driver
+  data:
+      elasticsearch:
+          cluster-name: allencai
+          cluster-nodes: 120.92.100.195:9300
+          
+          
