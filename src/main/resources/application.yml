@@ -15,5 +15,6 @@ spring:
       elasticsearch:
           cluster-name: allencai
           cluster-nodes: 120.92.100.195:9300
-          
-          
+logging:
+  path: logs/
+  file: elastic.log      

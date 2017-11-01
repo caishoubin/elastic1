@@ -29,7 +29,7 @@ public interface CityRepository extends ElasticsearchRepository<City, Long> {
     /**
      * 查询城市描述
      *
-     * 等同于下面代�?
+     * 等同于下面代码
      * @Query("{\"bool\" : {\"must\" : {\"term\" : {\"description\" : \"?0\"}}}}")
      * Page<City> findByDescription(String description, Pageable pageable);
      *
